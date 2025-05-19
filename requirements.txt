@@ -6,3 +6,4 @@ joblib
 firebase-admin
 twilio
 streamlit_autorefresh
+xgboost
