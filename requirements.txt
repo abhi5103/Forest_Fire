@@ -7,3 +7,5 @@ firebase-admin
 twilio
 streamlit_autorefresh
 xgboost
+randomforest
+decisiontree
