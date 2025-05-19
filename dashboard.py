@@ -7,7 +7,7 @@ from twilio.rest import Client
 from streamlit_autorefresh import st_autorefresh
 from collections import Counter
 st.set_page_config(page_title="Forest Fire Dashboard", layout="wide")
-firebase_config = st.secrets["firebase_service_account"]
+firebase_config = st.secrets["firebase"]
 st.write(firebase_config["project_id"])
    
 # Models Load
