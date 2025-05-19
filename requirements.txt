@@ -4,6 +4,8 @@ firebase-admin
 twilio
 xgboost
 catboost
+lightgbm
+scikit-learn
 joblib
 pandas
 numpy
