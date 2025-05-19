@@ -7,12 +7,8 @@ from twilio.rest import Client
 from streamlit_autorefresh import st_autorefresh
 from collections import Counter
 
-# Initialize Firebase
-if not firebase_admin._apps:
-    cred = credentials.Certificate("credentials.json")
-    firebase_admin.initialize_app(cred, {
-        'databaseURL': 'https://smartsensor-data-default-rtdb.asia-southeast1.firebasedatabase.app/'
-    })
+firebase_config = st.secrets["firebase"]
+st.write(firebase_config["project_id"])
    
 # Models Load
 xgb_model = joblib.load('fire_risk_xgb.pkl')
