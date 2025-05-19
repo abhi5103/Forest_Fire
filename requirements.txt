@@ -1,12 +1,9 @@
 streamlit
-scikit-learn
-pandas
-numpy
-joblib
+streamlit_autorefresh
 firebase-admin
 twilio
-streamlit_autorefresh
 xgboost
-randomforest
-decisiontree
 catboost
+joblib
+pandas
+numpy
