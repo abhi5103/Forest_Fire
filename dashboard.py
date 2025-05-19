@@ -6,7 +6,7 @@ from firebase_admin import credentials, db
 from twilio.rest import Client
 from streamlit_autorefresh import st_autorefresh
 from collections import Counter
-
+st.set_page_config(page_title="Forest Fire Dashboard", layout="wide")
 firebase_config = st.secrets["firebase"]
 st.write(firebase_config["project_id"])
    
@@ -16,8 +16,6 @@ dt_model = joblib.load('decision_tree_model.pkl')
 rf_model = joblib.load('random_forest_model.pkl')
 cb_model = joblib.load('catboost_model.pkl')
 lgbm_model = joblib.load('lightgbm_model.pkl')
-
-st.set_page_config(page_title="Forest Fire Dashboard", layout="wide")
 
 # Auto-refresh every 5 seconds
 st_autorefresh(interval=5000, key="auto_refresh")
